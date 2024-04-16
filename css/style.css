@@ -1,6 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  background-color: #ffffff;
+  color: #434455;
 }
 
 ul,
@@ -22,7 +24,7 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -32,20 +34,10 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
-}
-
-.logo-item {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 
 .menu-link:active,
@@ -69,11 +61,11 @@ button {
 
 .address-list-item {
   font-family: inherit;
-  font-weight: 400;
   font-size: 16px;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: inherit;
 }
 
 .address-list-item:active,
@@ -94,10 +86,9 @@ button {
   font-family: inherit;
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero-order-button {
@@ -106,9 +97,10 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
+.hero-order-button:focus,
 .hero-order-button:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #404bbf;
@@ -150,17 +142,17 @@ button {
   color: #434455;
 }
 
-.footer-section {
-  background: #2e2f42;
+.portfolio-header {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.footer-content {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+.portfolio-list {
+  background-color: #ffffff;
 }
 
 .portfolio-list-header {
@@ -179,4 +171,17 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.footer-section {
+  background: #2e2f42;
+}
+
+.footer-content {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 }
