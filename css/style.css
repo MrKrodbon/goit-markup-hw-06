@@ -31,7 +31,7 @@ button {
 }
 
 .header-logo-item {
-  font-family: "Raleway", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -60,10 +60,13 @@ button {
   color: #2e2f42;
 }
 
+.page-address {
+  font-style: normal;
+}
+
 .address-list-item {
   font-family: inherit;
   font-size: 16px;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
