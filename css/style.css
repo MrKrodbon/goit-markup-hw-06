@@ -41,6 +41,7 @@ button {
 }
 
 .menu-link:active,
+.menu-link:focus,
 .menu-link:hover {
   font-family: inherit;
   font-weight: 500;
@@ -69,10 +70,12 @@ button {
 }
 
 .address-list-item:active,
+.address-list-item:focus,
 .address-list-item:hover {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #404bbf;
@@ -101,6 +104,7 @@ button {
   color: #ffffff;
 }
 
+.hero-order-button:active,
 .hero-order-button:focus,
 .hero-order-button:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -125,11 +129,11 @@ button {
   color: #434455;
 }
 
-.team-section{
-  background-color: #F4F4FD;
+.team-section {
+  background-color: #f4f4fd;
 }
 
-.team-header{
+.team-header {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -138,7 +142,7 @@ button {
   color: #2e2f42;
 }
 
-.team-menu-item{
+.team-menu-item {
   background-color: #ffffff;
 }
 
