@@ -43,10 +43,13 @@ img {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -114,13 +117,11 @@ img {
 
 .page-address {
   font-style: normal;
-  display: flex;
 }
 
 .address-list {
   display: flex;
   gap: 40px;
-  margin-right: 40px;
 }
 .address-list:last-child() {
   display: flex;
@@ -423,14 +424,6 @@ img {
 .footer-section {
   background-color: #2e2f42;
   padding: 100px 0;
-}
-
-.footer-container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .footer-content {
