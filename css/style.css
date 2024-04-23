@@ -294,15 +294,16 @@ img {
   padding-right: 16px;
 }
 
+/*---------------PORTFOLIO STYLES-------------------------*/
+
 .portfolio-container {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 
 .portfolio-header {
-  display: flex;
   font-family: inherit;
   font-weight: 700;
   font-size: 36px;
@@ -311,23 +312,26 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
 
 .portfolio-menu {
   display: flex;
-  column-gap: 24px;
-  background-color: #ffffff;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .portfolio-menu-item {
-  display: flex;
+  width: calc((100% - 48px)/ 3);
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  width: calc((100% - 48) / 3);
+  
 }
 
 .portfolio-menu-header {
+  display: flex;
   font-family: inherit;
   font-weight: 500;
   font-size: 20px;
@@ -335,18 +339,22 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding-top: 32px;
-  padding-right: 226px;
-  padding-right: 16px;
+  padding-left: 16px;
   padding-bottom: 8px;
 }
 
 .portfolio-menu-content {
+  display: flex;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-right:314px ;
 }
 
 /*--------------FOOTER STYLES--------------------*/
@@ -383,10 +391,8 @@ img {
 .footer-container {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 60px;
 }
 
 .footer-content {
