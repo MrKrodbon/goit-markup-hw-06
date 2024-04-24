@@ -123,6 +123,12 @@ img {
 .address-list {
   display: flex;
   gap: 40px;
+  justify-content: flex-end;
+}
+
+.address-list:last-child() {
+  display: flex;
+  margin-right: 0;
 }
 
 .address-link-item {
