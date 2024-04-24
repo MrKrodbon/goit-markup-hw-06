@@ -117,16 +117,12 @@ img {
 
 .page-address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-list {
   display: flex;
   gap: 40px;
-  justify-content: flex-end;
-}
-.address-list:last-child() {
-  display: flex;
-  margin-right: 0;
 }
 
 .address-link-item {
@@ -134,6 +130,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   font-family: inherit;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -205,9 +202,6 @@ img {
   padding-bottom: 120px;
 }
 
-.advantages-container {
-}
-
 .advantages-title {
   position: absolute;
   width: 1px;
@@ -249,12 +243,6 @@ img {
 }
 
 .advantages-list-item {
-  display: flex;
-  flex-direction: column;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
   width: calc((100% - 72px) / 4);
 }
 
@@ -378,30 +366,22 @@ img {
 }
 
 .portfolio-menu-header {
-  display: flex;
   font-family: inherit;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
-  margin: 16px;
   margin-bottom: 8px;
 }
 
 .portfolio-menu-content {
-  display: flex;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 32px;
-  margin-left: 16px;
-  margin-top: 8px;
-  margin-right: 314px;
 }
 
 /*--------------FOOTER STYLES--------------------*/
