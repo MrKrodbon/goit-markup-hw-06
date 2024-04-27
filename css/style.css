@@ -115,6 +115,21 @@ img {
   margin-right: 0;
 }
 
+.current {
+  position: relative;
+}
+
+.current:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+}
+
 .page-address {
   font-style: normal;
   margin-left: auto;
@@ -153,6 +168,8 @@ img {
 
 .hero-section {
   background-color: #2e2f42;
+  background: url("../images/background-image/Dark-bg.png"),
+    url("../images/background-image/people-office.jpg");
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -202,6 +219,25 @@ img {
 .hero-order-button:hover {
   background: #404bbf;
 }
+
+.advantages-icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+}
+
+.icon {
+  fill: #4d5ae5;
+}
+
+/*----------------ADVANTAGES STYLES----------------------*/
 
 .advantages-section {
   padding-top: 120px;
