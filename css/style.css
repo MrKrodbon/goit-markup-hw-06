@@ -386,10 +386,10 @@ img {
 }
 
 .team-person-icon {
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
-.team-social-item:hover {
+.team-social-link-item :hover {
   background-color: #404bbf;
   cursor: pointer;
 }
@@ -406,13 +406,13 @@ img {
   position: relative;
 }
 
-.team-social-item {
+.team-social-link-item {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px;
   background-color: #4d5ae5;
-  border-radius: 50px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   transform: color;
@@ -592,7 +592,7 @@ img {
   align-items: center;
   border: 1px;
   background-color: #4d5ae5;
-  border-radius: 50px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   transform: color;
