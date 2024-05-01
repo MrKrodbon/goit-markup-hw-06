@@ -155,9 +155,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-link-item:active,
 .address-link-item:focus,
 .address-link-item:hover {
   color: #404bbf;
@@ -217,7 +217,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-order-button:active,
 .hero-order-button:focus,
 .hero-order-button:hover {
   background: #404bbf;
@@ -382,10 +381,7 @@ img {
   height: 40px;
 }
 
-.team-social-link:focus {
-  background-color: #404bbf;
-}
-
+.team-social-link:focus,
 .team-social-link:hover {
   background-color: #404bbf;
 }
@@ -591,8 +587,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:focus,
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #31d0aa;
 }
 
