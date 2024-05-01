@@ -521,25 +521,23 @@ img {
 }
 
 .footer-section {
-  display: flex;
-  flex-direction: row;
   background-color: #2e2f42;
   padding: 100px 0;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  gap: 120px;
-  margin-left: 0;
-}
-
-.footer-logo-container {
+.page-footer-top-container {
   display: flex;
   flex-direction: column;
+  margin-left: 0;
+  padding-right: 120px;
 }
 
-.footer-social-container {
+.page-footer-container {
+  display: flex;
+  
+}
+
+.page-footer-social-container {
   display: flex;
   flex-direction: column;
 }
