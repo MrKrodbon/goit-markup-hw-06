@@ -229,7 +229,7 @@ img {
 .hero-order-button:focus,
 .hero-order-button:hover {
   background: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------------ADVANTAGES STYLES----------------------*/
@@ -391,10 +391,12 @@ img {
   height: 40px;
 }
 
-.team-social-link:focus,
+.team-social-link:focus {
+  background-color: #404bbf;
+}
+
 .team-social-link:hover {
   background-color: #404bbf;
-  cursor: pointer;
 }
 
 .team-social-link:first-child {
@@ -583,7 +585,6 @@ img {
 
 .footer-social-link:first-child {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
 }
 
 .footer-social-link {
@@ -598,10 +599,11 @@ img {
   height: 40px;
 }
 
-.footer-social-link:focus,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
 .footer-social-link:hover {
   background-color: #31d0aa;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
