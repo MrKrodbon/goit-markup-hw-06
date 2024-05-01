@@ -115,6 +115,7 @@ img {
 .current {
   position: relative;
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -213,13 +214,13 @@ img {
   padding-left: 32px;
   height: 56px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-order-button:active,
 .hero-order-button:focus,
 .hero-order-button:hover {
   background: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------------ADVANTAGES STYLES----------------------*/
@@ -587,11 +588,10 @@ img {
   background-color: #4d5ae5;
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:focus {
-  background-color: #31d0aa;
-}
+.footer-social-link:focus,
 .footer-social-link:hover {
   background-color: #31d0aa;
 }
