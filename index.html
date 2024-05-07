@@ -633,26 +633,22 @@
           </div>
           <div class="modal-conditions-container">
             <input
-              class="modal-conditions-checkbox"
-              id="modal-conditions-content"
+              class="modal-conditions-checkbox visually-hidden"
+              id="privacy-policy"
               type="checkbox"
               name="privacy-policy"
               value="true"
               required
             />
-            <span class="modal-own-checkbox">
-              <svg class="modal-checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-done"></use>
-              </svg>
-            </span>
-            <p
-              class="modal-conditions-content"
-              name="modal-conditions-content"
-              for="privacy-policy"
-            >
+            <label class="modal-conditions-checkbox-label" for="privacy-policy">
+              <span class="modal-own-checkbox">
+                <svg class="modal-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-done"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
-              <a class="policy-link" href="./">Privacy Policy</a>
-            </p>
+              <a class="policy-link" href="./"> Privacy Policy</a>
+            </label>
           </div>
           <button class="modal-submit-btn" type="submit">Send</button>
         </div>
