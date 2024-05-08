@@ -570,7 +570,6 @@ img {
 
 .footer-social-list {
   display: flex;
-  flex-direction: row;
   gap: 16px;
 }
 
@@ -580,7 +579,6 @@ img {
 
 .footer-social-link {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 1px;
@@ -604,6 +602,11 @@ img {
   fill: #f4f4fd;
   height: 24px;
   width: 24px;
+}
+
+.footer-subscribe-container{
+  display: flex;
+
 }
 
 .footer-subscribe-email-container {
@@ -666,7 +669,7 @@ img {
   height: 20px;
 }
 
-.modal-overlay {
+.modal-overlay{
   display: flex;
   justify-content: center;
   align-items: center;
