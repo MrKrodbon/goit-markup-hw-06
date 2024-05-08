@@ -751,6 +751,10 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-close-button:focus,
 .modal-close-button:hover {
   fill: #ffffff;
@@ -772,10 +776,11 @@ img {
 
 .review-form-field-wrapper {
   width: 360px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .review-user-label {
+  display: block;
   width: 360px;
   font-family: inherit;
   font-weight: 400;
@@ -790,8 +795,6 @@ img {
   position: absolute;
   top: 50%;
   left: 16px;
-  width: 16px;
-  height: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
