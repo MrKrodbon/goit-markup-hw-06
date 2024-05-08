@@ -604,18 +604,8 @@ img {
   width: 24px;
 }
 
-.footer-subscribe-wrapper {
-  display: flex;
-}
-
 .footer-subscribe-container {
   display: flex;
-}
-
-.footer-subscribe-email-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 80px;
 }
 
 .footer-subscribe-content {
@@ -659,9 +649,10 @@ img {
 }
 
 .footer-subscribe-container {
-  display: flex;
-  justify-content: row;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
 }
 
 .footer-subscribe-form {
