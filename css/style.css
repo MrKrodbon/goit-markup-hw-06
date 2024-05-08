@@ -779,6 +779,10 @@ img {
   margin-bottom: 8px;
 }
 
+.review-form-field-wrapper:last-child() {
+  margin-bottom: 16px;
+}
+
 .review-user-label {
   display: block;
   width: 360px;
@@ -920,7 +924,6 @@ img {
 }
 
 .review-conditions-checkbox-label {
-  display: inline-flex;
   justify-content: baseline;
   width: 338px;
   font-family: inherit;
