@@ -582,9 +582,7 @@
         </p>
         <form class="review-form">
           <div class="review-form-field-wrapper">
-            <label class="review-user-label" for="user-name"
-              >Name</label
-            >
+            <label class="review-user-label" for="user-name">Name</label>
             <div class="review-form-input-wrapper">
               <input
                 type="text"
@@ -599,11 +597,7 @@
             </div>
           </div>
           <div class="review-form-field-wrapper">
-            <label
-              class="review-user-label"
-              for="user-phone"
-              >Phone</label
-            >
+            <label class="review-user-label" for="user-phone">Phone</label>
             <div class="review-form-input-wrapper">
               <input
                 type="tel"
@@ -620,9 +614,7 @@
             </div>
           </div>
           <div class="review-form-field-wrapper">
-            <label
-              class="review-user-label"
-              for="user-email-input"
+            <label class="review-user-label" for="user-email-input"
               >Email</label
             >
             <div class="review-form-input-wrapper">
@@ -639,43 +631,36 @@
             </div>
           </div>
           <div class="review-form-field-wrapper">
-            <label
-              class="review-user-label"
-              for="user-comment"
-              >Comment</label
-            >
+            <label class="review-user-label" for="user-comment">Comment</label>
             <textarea
               class="review-comment-input"
               name="user-comment"
               placeholder="Text input"
-              id="modal-comment-input"
+              id="user-comment"
               required
             ></textarea>
           </div>
-          <div class="review-form-conditions-wrapper">
-            <input
-              class="review-conditions-checkbox visually-hidden"
-              id="user-privacy"
-              type="checkbox"
-              name="privacy-policy"
-              value="true"
-              required
-            />
-            <label
-              class="review-conditions-checkbox-label"
-              for="user-privacy"
-            >
-              <span class="review-own-checkbox">
-                <svg class="review-checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-done"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="policy-link" href=""> Privacy Policy </a>
-            </label>
-          </div>
-          <button class="review-submit-btn" type="submit">Send</button>
         </form>
+        <div class="review-conditions">
+          <input
+            class="review-conditions-checkbox visually-hidden"
+            id="user-privacy"
+            type="checkbox"
+            name="user-privacy"
+            value="true"
+            required
+          />
+          <label class="review-conditions-checkbox-label" for="user-privacy">
+            <span class="review-own-checkbox">
+              <svg class="review-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-done"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="policy-link" href=""> Privacy Policy </a>
+          </label>
+        </div>
+        <button class="review-submit-btn" type="submit">Send</button>
       </div>
     </div>
   </body>
