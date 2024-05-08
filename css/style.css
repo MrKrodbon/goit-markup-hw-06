@@ -779,7 +779,7 @@ img {
   margin-bottom: 8px;
 }
 
-.review-form-field-wrapper:last-child() {
+.review-form:last-child {
   margin-bottom: 16px;
 }
 
