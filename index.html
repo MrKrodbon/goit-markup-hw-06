@@ -568,24 +568,26 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
-      <form class="review-modal-form">
-        <div class="modal">
-          <button class="modal-close-button" type="button">
-            <svg class="modal-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <p class="modal-content modal-container">
-            Leave your contacts and we will call you back
-          </p>
-          <div class="modal-wrapper">
+
+    <!-- ============ BACKDROP ============== -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-content modal-container">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
             <label
               class="user-name-label modal-label-container"
               for="user-name-input"
               >Name</label
             >
-            <div class="modal-input-wrapper">
+            <div class="review-form-input-wrapper">
               <input
                 type="text"
                 class="user-name-input input-content"
@@ -598,13 +600,13 @@
               </svg>
             </div>
           </div>
-          <div class="modal-wrapper">
+          <div class="review-form-field-wrapper">
             <label
               class="user-phone-label modal-label-container"
               for="user-phone-input"
               >Phone</label
             >
-            <div class="modal-input-wrapper">
+            <div class="review-form-input-wrapper">
               <input
                 type="tel"
                 class="user-phone-input input-content"
@@ -619,13 +621,13 @@
               </svg>
             </div>
           </div>
-          <div class="modal-wrapper">
+          <div class="review-form-field-wrapper">
             <label
               class="user-email-label modal-label-container"
               for="user-email-input"
               >Email</label
             >
-            <div class="modal-input-wrapper">
+            <div class="review-form-input-wrapper">
               <input
                 type="email"
                 class="user-email-input input-content"
@@ -638,7 +640,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-wrapper">
+          <div class="review-form-field-wrapper">
             <label
               class="modal-comment-label modal-label-container"
               for="modal-comment-input"
@@ -653,28 +655,31 @@
               required
             ></textarea>
           </div>
-          <div class="modal-conditions-container">
+          <div class="review-form-conditions-wrapper">
             <input
-              class="modal-conditions-checkbox visually-hidden"
+              class="review-conditions-checkbox visually-hidden"
               id="privacy-policy"
               type="checkbox"
               name="privacy-policy"
               value="true"
               required
             />
-            <label class="modal-conditions-checkbox-label" for="privacy-policy">
-              <span class="modal-own-checkbox">
-                <svg class="modal-checkbox-icon" width="10" height="8">
+            <label
+              class="review-conditions-checkbox-label"
+              for="privacy-policy"
+            >
+              <span class="review-own-checkbox">
+                <svg class="review-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-done"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="policy-link" href="./"> Privacy Policy</a>
+              <a class="policy-link" href=""> Privacy Policy </a>
             </label>
           </div>
-          <button class="modal-submit-btn" type="submit">Send</button>
-        </div>
-      </form>
+          <button class="review-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

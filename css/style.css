@@ -604,9 +604,8 @@ img {
   width: 24px;
 }
 
-.footer-subscribe-container{
+.footer-subscribe-container {
   display: flex;
-
 }
 
 .footer-subscribe-email-container {
@@ -669,7 +668,7 @@ img {
   height: 20px;
 }
 
-.modal-overlay{
+.backdrop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -686,6 +685,11 @@ img {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -699,11 +703,29 @@ img {
   min-height: 584px;
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
 }
 
-.modal-overlay.is-open {
-  opacity: 1;
-  visibility: visible;
+.modal-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 24px;
+  margin-right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #e7e9fc;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button:hover {
+  fill: #ffffff;
+  background-color: #404bbf;
 }
 
 .modal-content {
@@ -719,7 +741,7 @@ img {
   color: #2e2f42;
 }
 
-.modal-wrapper {
+.review-form-field-wrapper {
   width: 360px;
 }
 
@@ -733,7 +755,21 @@ img {
   color: #8e8f99;
 }
 
-.modal-input-wrapper {
+.modal-input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-left: 16px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form-input-wrapper {
   position: relative;
   margin-bottom: 8px;
 }
@@ -751,15 +787,6 @@ img {
 .input-content:focus {
   border-color: #4d5ae5;
   outline: transparent;
-}
-
-.modal-input-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 11px;
-  margin-bottom: 11px;
-  margin-left: 16px;
 }
 
 .input-content:focus + .modal-input-icon {
@@ -789,34 +816,12 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-close-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 24px;
-  margin-right: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  background-color: #e7e9fc;
-  border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-button:hover {
-  fill: #ffffff;
-  background-color: #404bbf;
-}
-
 .textarea-content {
   width: 360px;
   height: 138px;
 }
 
-.modal-conditions-container {
+.review-form-conditions-wrapper {
   display: flex;
   flex-direction: row;
   width: 360px;
@@ -825,7 +830,7 @@ img {
   margin-bottom: 24px;
 }
 
-.modal-conditions-checkbox-label {
+.review-conditions-checkbox-label {
   font-family: inherit;
   font-weight: 400;
   font-size: 12px;
@@ -838,7 +843,7 @@ img {
   text-decoration: underline;
 }
 
-.modal-own-checkbox {
+.review-own-checkbox {
   display: flex;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -849,23 +854,24 @@ img {
   margin-right: 8px;
 }
 
-.modal-conditions-checkbox:checked
-  + .modal-conditions-checkbox-label
-  .modal-own-checkbox {
+.review-conditions-checkbox:checked
+  + .review-conditions-checkbox-label
+  .review-own-checkbox {
   background-color: #404bbf;
   border-color: #404bbf;
   fill: #ffffff;
 }
 
-.modal-own-checkbox {
+.review-own-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 0px;
 }
 
-.modal-conditions-checkbox-label {
-  display: flex;
+.review-conditions-checkbox-label {
+  display: inline-flex;
+  justify-content: baseline;
   width: 338px;
   font-family: inherit;
   font-weight: 400;
@@ -875,9 +881,11 @@ img {
   color: #8e8f99;
 }
 
-.modal-submit-btn {
+.review-submit-btn {
   border-radius: 4px;
   padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
   width: 169px;
   height: 56px;
   font-family: inherit;
@@ -888,4 +896,10 @@ img {
   text-align: center;
   color: #ffffff;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-submit-btn:hover,
+.review-submit-btn:focus {
+  background: #404bbf;
 }
