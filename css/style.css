@@ -775,11 +775,10 @@ img {
 }
 
 .review-form-field-wrapper {
-  width: 360px;
   margin-bottom: 8px;
 }
 
-.review-form:last-child {
+.review-form-field-wrapper:last-child {
   margin-bottom: 16px;
 }
 
