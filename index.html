@@ -582,13 +582,13 @@
         </p>
         <form class="review-form">
           <div class="review-form-field-wrapper">
-            <label class="user-name-label modal-label-container" for="user-name"
+            <label class="review-user-label" for="user-name"
               >Name</label
             >
             <div class="review-form-input-wrapper">
               <input
                 type="text"
-                class="user-name-input input-content"
+                class="review-user-input"
                 name="user-name"
                 id="user-name"
                 required
@@ -600,16 +600,16 @@
           </div>
           <div class="review-form-field-wrapper">
             <label
-              class="user-phone-label modal-label-container"
-              for="user-phone-input"
+              class="review-user-label"
+              for="user-phone"
               >Phone</label
             >
             <div class="review-form-input-wrapper">
               <input
                 type="tel"
-                class="user-phone-input input-content"
-                name="user-phone-input"
-                id="user-phone-input"
+                class="review-user-input"
+                name="user-phone"
+                id="user-phone"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
                 required
@@ -621,14 +621,14 @@
           </div>
           <div class="review-form-field-wrapper">
             <label
-              class="user-email-label modal-label-container"
+              class="review-user-label"
               for="user-email-input"
               >Email</label
             >
             <div class="review-form-input-wrapper">
               <input
                 type="email"
-                class="user-email-input input-content"
+                class="review-user-input"
                 name="user-email-input"
                 id="user-email-input"
                 required
@@ -640,7 +640,7 @@
           </div>
           <div class="review-form-field-wrapper">
             <label
-              class="modal-comment-label modal-label-container"
+              class="review-user-label"
               for="user-comment"
               >Comment</label
             >
@@ -655,7 +655,7 @@
           <div class="review-form-conditions-wrapper">
             <input
               class="review-conditions-checkbox visually-hidden"
-              id="privacy-policy"
+              id="user-privacy"
               type="checkbox"
               name="privacy-policy"
               value="true"
@@ -663,7 +663,7 @@
             />
             <label
               class="review-conditions-checkbox-label"
-              for="privacy-policy"
+              for="user-privacy"
             >
               <span class="review-own-checkbox">
                 <svg class="review-checkbox-icon" width="10" height="8">
