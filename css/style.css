@@ -701,9 +701,14 @@ img {
   background-color: #ffffff;
   width: 408px;
   min-height: 584px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
+  padding: 72px 24px 24px 24px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 4px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button {
@@ -711,18 +716,20 @@ img {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 24px;
-  margin-right: 24px;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
-  border-radius: 100%;
+  padding: 0;
+  border-radius: 50%;
   background-color: #e7e9fc;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close-button:focus,
 .modal-close-button:hover {
   fill: #ffffff;
   background-color: #404bbf;
@@ -731,7 +738,6 @@ img {
 .modal-content {
   max-width: 360px;
   margin-bottom: 16px;
-  margin-top: 72px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -755,13 +761,12 @@ img {
   color: #8e8f99;
 }
 
-.modal-input-icon {
+.review-input-icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 11px;
-  margin-bottom: 11px;
-  margin-left: 16px;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form {
@@ -774,6 +779,11 @@ img {
   margin-bottom: 8px;
 }
 
+.modal-label-container {
+  display: block;
+  margin-bottom: 4px;
+}
+
 .input-content {
   font-family: inherit;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -782,6 +792,8 @@ img {
   height: 40px;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .input-content:focus {
@@ -789,11 +801,11 @@ img {
   outline: transparent;
 }
 
-.input-content:focus + .modal-input-icon {
+.input-content:focus + .review-input-icon {
   fill: #4d5ae5;
 }
 
-.textarea-content {
+.review-comment-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
@@ -801,17 +813,24 @@ img {
   font-family: inherit;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   padding-top: 8px;
   padding-left: 16px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-content::placeholder {
+.review-comment-input:hover,
+.review-comment-input:focus {
+  border-color: #4d5ae5;
+}
+
+.textarea-comment-input::placeholder {
   font-family: inherit;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
