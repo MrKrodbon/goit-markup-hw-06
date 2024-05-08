@@ -750,7 +750,7 @@ img {
 
 .review-form-field-wrapper {
   width: 360px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .review-user-label {
@@ -779,7 +779,6 @@ img {
 
 .review-form-input-wrapper {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .review-user-label {
