@@ -461,7 +461,7 @@ img {
 
 .portfolio-menu-content {
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 400; 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -602,10 +602,6 @@ img {
   fill: #f4f4fd;
   height: 24px;
   width: 24px;
-}
-
-.footer-subscribe-container {
-  display: flex;
 }
 
 .footer-subscribe-content {
