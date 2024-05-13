@@ -74,7 +74,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
+
   .menu {
     display: none;
   }
@@ -644,6 +647,56 @@ img {
 
 /* -------------------HERO STYLES----------------- */
 @media screen and (max-width: 767px) {
+  .hero-section {
+    background-color: #2e2f42;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/background-image/Mobile/mobile-people-office.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 320px;
+    min-height: 432px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section-title{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    max-width: 216px;
+    min-height: 160px;
+  }
+
+  .hero-order-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1560,7 +1613,6 @@ img {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
     color: #ffffff;
@@ -1940,23 +1992,7 @@ img {
     gap: 24px;
   }
 
-  .footer-send-btn {
-    display: flex;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 4px;
-    min-width: 165px;
-    height: 40px;
-    background: #4d5ae5;
-    border: none;
-    justify-content: center;
-    align-items: center;
-  }
+ 
 
   .footer-send-btn:hover,
   .footer-send-btn:focus {
