@@ -746,8 +746,6 @@ img {
     align-items: center;
     padding-left: 136px;
     padding-right: 136px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 96px;
     padding-bottom: 96px;
   }
@@ -792,7 +790,6 @@ img {
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
-    
   }
 
   .hero-container {
